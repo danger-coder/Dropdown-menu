@@ -34,7 +34,7 @@ menuItems.forEach((item) => {
     // If it contains a nested <ul>, add a dropdown icon
     const dropdownIcon = document.createElement("span");
     dropdownIcon.className = "dropdown-icon";
-    dropdownIcon.innerHTML = "&#9660;"; // Unicode for down arrow
+    dropdownIcon.innerHTML = "&#8964;"; // Unicode for down arrow
     item.appendChild(dropdownIcon);
   }
 });

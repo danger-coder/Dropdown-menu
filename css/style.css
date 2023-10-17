@@ -13,7 +13,8 @@ a {
   display: none;
 }
 header {
-  background: linear-gradient(to right, rgb(195, 20, 50), rgb(36, 11, 54));
+  /* background: linear-gradient(to right, rgb(195, 20, 50), rgb(36, 11, 54)); */
+  background-color: #002C3F;
 }
 .container {
   /* padding: 17px 0; */
@@ -26,12 +27,12 @@ header {
 
 .container #menu ul {
   display: flex;
-  gap: 35px;
+  gap: 22px;
   list-style-type: none;
 }
 
 .container #menu ul > li > a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.4px;
   color: white;
@@ -50,17 +51,21 @@ header {
   animation: fadeIn 0.3s ease-out;
 }
 .container #menu ul li > ul {
-  border-top: 3px solid rgb(255, 8, 3);
+  border-top: 3px solid rgb(251, 251, 251);
   position: absolute;
   top: 100%;
   left: 0px;
-  background-color: #750555;
-  width: 190px;
+  background-color: #002C3F;
+  width: 242px;
   padding: 0px;
   display: flex;
   flex-direction: column;
   gap: 0px;
   visibility: hidden;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 @keyframes fadeIn {
   from {
@@ -73,15 +78,19 @@ header {
   }
 }
 .container #menu ul li > ul > li {
-  padding: 15px;
+  padding: 7px 20px;
   position: relative;
-  border-bottom: 0.5px solid grey;
+  /* border-bottom: 0.5px solid grey; */
+}
+.container #menu ul li > ul > li>a{
+  font-size: 14px;
+  font-weight: 400;
 }
 .container #menu ul li > ul > li:hover a {
   color: white;
 }
 .container #menu ul li > ul > li:hover {
-  background-color: red;
+  background-color: #0084c5;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -104,7 +113,7 @@ header {
 /* //we can change the sliding menu theme color as we want */
 /* //*********************start******************************** */
 .mm-menu {
-  background: linear-gradient(to right, rgba(195, 20, 49, 0.716), rgb(97, 52, 129));
+  background: #002C3F;
   border-color: rgba(163, 148, 148, 0.498);
   color: rgba(255, 255, 255, 0.75);
 }
